@@ -7,7 +7,6 @@ const Footer = () => {
     const theme = useTheme();
     const root = css({
         div: {
-            width: '100vw',
             height: '1.5px',
             backgroundColor: '#f3f3f3'
         },
