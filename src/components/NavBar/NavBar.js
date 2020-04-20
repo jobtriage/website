@@ -4,14 +4,34 @@ import { useTheme } from 'emotion-theming';
 
 const NavBar = () => {
     const theme = useTheme();
-    const styles = css({
-        color: theme.palette.secondary.main
-    });
+    const Root = css({
+        width: '75vw',
+        margin: '40px auto',
+        display: 'flex',
+        justifyContent: 'space-between',
+        img: {
+            width: '55px',
+        },
+        ul: {
+            listStyle: 'none',
+            display: 'flex',
+            li: {
+                margin: '0px 30px',
+            }
+        }
+    })
 
     return (
-        <nav>
-            <h1 css={styles}>Hello emotion</h1>
+        <nav css={Root}>
             <img src='/images/Logo.svg' alt='Job Triage' />
+            <section>
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Contribution</li>
+                    <li>GitHub</li>
+                </ul>
+            </section>
         </nav>
     )
 };
