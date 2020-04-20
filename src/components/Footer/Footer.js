@@ -17,8 +17,6 @@ const Footer = () => {
             '@media (max-width: 850px)': {
                 display: 'block',
                 margin: '30px auto',
-                width: '95vw',
-                textAlign: 'center',
                 span: {
                     display: 'block',
                     margin: '20px auto'
