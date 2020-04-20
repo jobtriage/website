@@ -43,6 +43,7 @@ const Typography = (props) => {
 
     const root = css({
         ...calcCSS(Component),
+        color: '#3f3d3d'
     });
 
     return <Component css={root} {...more}>{children} </Component>

@@ -5,6 +5,8 @@ import Typography from '../../../UI/Typography/Typography';
 
 const Feature = (props) => {
     const { title, description, url } = props;
+    const theme = useTheme();
+
     const root = css({
         display: 'flex',
         width: '313px',
@@ -14,13 +16,17 @@ const Feature = (props) => {
             width: '60px',
             height: '60px'
         },
+        '@media (max-width: 800px)': {
+            margin: '85px auto'
+        },
         margin: '85px',
         section: {
             textAlign: 'center',
         }
     })
     const typesMargin = css({
-        margin: '10px 0px'
+        margin: '10px 0px',
+        color: theme.palette.primary.main
     })
 
     return (
@@ -28,7 +34,7 @@ const Feature = (props) => {
             <img src={url} alt='Priority' />
             <section>
                 <Typography css={typesMargin} component='h3'>{title}</Typography>
-                <Typography css={typesMargin} component='p'>{description}</Typography>
+                <Typography component='p'>{description}</Typography>
             </section>
         </div>
     )

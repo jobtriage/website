@@ -18,12 +18,15 @@ const Contribution = () => {
     const types = css({
         margin: '40px',
         textAlign: 'center',
-        width: '535px',
+        width: '40vw',
+        '@media (max-width: 800px)': {
+            width: '80vw',
+        }
     });
     const divider = css({
         width: '100%',
         height: '2px',
-        backgroundColor: '#000'
+        backgroundColor: '#3f3d3d'
     })
     return (
         <div css={root}>

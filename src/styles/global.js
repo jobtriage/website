@@ -10,6 +10,8 @@ const global = css({
         width: '100vw'
     },
     body: {
+        width: '75vw',
+        margin: '0 auto',
         fontFamily: 'Montserrat sans-serif'
     },
     a: {

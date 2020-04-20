@@ -12,10 +12,19 @@ const Footer = () => {
             backgroundColor: '#f3f3f3'
         },
         section: {
-            width: '75vw',
             margin: '30px auto',
             display: 'flex',
             justifyContent: 'space-between',
+            '@media (max-width: 850px)': {
+                display: 'block',
+                margin: '30px auto',
+                width: '95vw',
+                textAlign: 'center',
+                span: {
+                    display: 'block',
+                    margin: '20px auto'
+                }
+            }
         },
         a: {
             color: theme.palette.secondary.main

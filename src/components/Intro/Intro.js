@@ -6,29 +6,37 @@ import Typography from '../../UI/Typography/Typography';
 const Intro = () => {
 
     const root = css({
-        width: '75vw',
         margin: '130px auto',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        '@media (max-width: 800px)': {
+            flexDirection: 'column'
+        },
+        img: {
+            width: '40vw',
+            '@media (max-width: 800px)': {
+                width: '95vw',
+                margin: '20px'
+            }
+        }
     });
 
     const leftSection = css({
         maxWidth: '30vw',
+        '@media (max-width: 800px)': {
+            maxWidth: '95vw',
+        }
 
-    })
+    });
+
     const typographyMargin = css({
         margin: '20px 0px'
     });
+
     const button = css({
         margin: '50px 0px',
     })
-
-    const rightSection = css({
-        img: {
-            width: '40vw',
-        }
-    });
 
 
     return (
@@ -43,7 +51,7 @@ const Intro = () => {
                     Go To The App
                 </Button>
             </section>
-            <section css={rightSection}>
+            <section>
                 <img src='/images/Intro3.svg' alt='Intro' />
             </section>
         </div>

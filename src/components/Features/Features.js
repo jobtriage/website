@@ -2,10 +2,12 @@ import React from 'react';
 import { css } from '@emotion/core';
 import Feature from './Feature/Feature';
 import Typography from '../../UI/Typography/Typography';
+import { useTheme } from 'emotion-theming';
 
 const Features = () => {
+    const theme = useTheme();
+
     const root = css({
-        width: '75vw',
         margin: '60px auto',
         display: 'flex',
         flexDirection: 'column',
@@ -15,12 +17,15 @@ const Features = () => {
     const container = css({
         width: '100%',
         display: 'flex',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        '@media (max-width: 800px)': {
+            flexDirection: 'column',
+        }
     });
     const divider = css({
         width: '100%',
         height: '2px',
-        backgroundColor: '#000'
+        backgroundColor: '#181819'
     });
 
     return (

@@ -6,7 +6,6 @@ import Typography from '../../UI/Typography/Typography';
 const NavBar = () => {
     const theme = useTheme();
     const Root = css({
-        width: '75vw',
         margin: '40px auto',
         display: 'flex',
         justifyContent: 'space-between',
