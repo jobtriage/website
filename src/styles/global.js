@@ -11,6 +11,9 @@ const global = css({
     },
     body: {
         fontFamily: 'Montserrat sans-serif'
+    },
+    a: {
+        textDecoration: 'none'
     }
 });
 

@@ -39,7 +39,7 @@ const Intro = () => {
                     Job searching is a very exhaustive process. Managing application is very critical in this.
                     Our app can help you in many ways with your application and make precess less painful.
                 </Typography>
-                <Button css={button}>
+                <Button css={button} type='button'>
                     Go To The App
                 </Button>
             </section>

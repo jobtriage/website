@@ -1,25 +1,38 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import Typography from '../../UI/Typography/Typography';
+import { useTheme } from 'emotion-theming';
 
 const Footer = () => {
+    const theme = useTheme();
     const root = css({
         div: {
             width: '100vw',
             height: '1.5px',
             backgroundColor: '#f3f3f3'
         },
-        p: {
+        section: {
             width: '75vw',
-            margin: '50px auto',
-            textAlign: 'center'
+            margin: '30px auto',
+            display: 'flex',
+            justifyContent: 'space-between',
+        },
+        a: {
+            color: theme.palette.secondary.main
         }
     })
     return (
         <div css={root}>
             <div></div>
-            <p>
-                Released v0.1.0 under MIT License. Copyright &copy; 2020 Job Triage.
-           </p>
+            <section>
+                <Typography component='p'>
+                    Released v0.1.0 under MIT License. Copyright &copy; 2020 Job Triage.
+                </Typography>
+                <span>Follow <a href='https://twitter.com/KoushikKM96' target='_blank'>@Twitter</a> to get updates!</span>
+                <span>Need help? <a href='mailto:jobtriage@gmail.com' target="_blank">@Gmail</a></span>
+
+            </section>
+
         </div>
 
     )

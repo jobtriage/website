@@ -16,6 +16,7 @@ const Button = (props) => {
         borderRadius: '5px',
         cursor: 'pointer',
         transition: 'all 0.22s ease-in-out',
+        fontFamily: 'Montserrat sans-serif',
         ':hover': {
             backgroundColor: '#fff',
             color: theme.palette.primary.main,

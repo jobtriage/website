@@ -17,10 +17,18 @@ const Features = () => {
         display: 'flex',
         justifyContent: 'space-around'
     });
+    const divider = css({
+        width: '100%',
+        height: '2px',
+        backgroundColor: '#000'
+    });
 
     return (
         <div css={root}>
-            <Typography component='h1'>Features</Typography>
+            <div>
+                <Typography component='h1'>Features</Typography>
+                <div css={divider}></div>
+            </div>
             <div css={container}>
                 <section>
                     <Feature

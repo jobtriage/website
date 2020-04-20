@@ -11,21 +11,27 @@ const Contribution = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        p: {
-            width: '535px',
-        },
         a: {
-            color: theme.palette.primary.main
-        }
+            color: theme.palette.secondary.main
+        },
     })
     const types = css({
         margin: '40px',
         textAlign: 'center',
+        width: '535px',
+    });
+    const divider = css({
+        width: '100%',
+        height: '2px',
+        backgroundColor: '#000'
     })
     return (
         <div css={root}>
-            <Typography component='h1'>Contributions</Typography>
-            <Typography css={types} component='p'>Job Triage is completely open source and free and it always will be. Contribute to Job Triage by creating  <a href="#">issues</a> and <a href="#">Pull requests</a>.</Typography>
+            <div>
+                <Typography component='h1'>Contributions</Typography>
+                <div css={divider}></div>
+            </div>
+            <Typography css={types} component='p'>Job Triage is completely open source, free and it always will be. Contribute to Job Triage by creating  <a href="https://github.com/jobtriage/jobtriage/issues" target="_blank">issues</a> and <a href="https://github.com/jobtriage/jobtriage/pulls" target="_blank">Pull requests</a>.</Typography>
         </div>
     )
 };
