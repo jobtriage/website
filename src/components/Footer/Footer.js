@@ -7,6 +7,7 @@ const Footer = () => {
     const theme = useTheme();
     const root = css({
         div: {
+            marginTop: '5em',
             height: '1.5px',
             backgroundColor: '#f3f3f3'
         },
@@ -26,7 +27,8 @@ const Footer = () => {
         a: {
             color: theme.palette.secondary.main
         }
-    })
+    });
+
     return (
         <div css={root}>
             <div></div>

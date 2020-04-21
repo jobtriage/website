@@ -6,36 +6,29 @@ import Typography from '../../../UI/Typography/Typography';
 const Feature = (props) => {
     const { title, description, url } = props;
     const theme = useTheme();
-
     const root = css({
+        marginTop: '5em',
+        textAlign: 'center',
         display: 'flex',
-        width: '313px',
         flexDirection: 'column',
         alignItems: 'center',
         img: {
-            width: '60px',
-            height: '60px'
+            width: '100px',
+            height: '100px'
         },
-        '@media (max-width: 800px)': {
-            margin: '85px auto'
-        },
-        margin: '85px',
-        section: {
-            textAlign: 'center',
-        }
-    })
-    const typesMargin = css({
-        margin: '10px 0px',
+    });
+
+    const margin = css({
+        marginTop: '1.2em',
+        marginBottom: '0.5em',
         color: theme.palette.primary.main
     })
 
     return (
         <div css={root}>
             <img src={url} alt='Priority' />
-            <section>
-                <Typography css={typesMargin} component='h3'>{title}</Typography>
-                <Typography component='p'>{description}</Typography>
-            </section>
+            <Typography css={margin} component='h3'>{title}</Typography>
+            <Typography component='p'>{description}</Typography>
         </div>
     )
 };
