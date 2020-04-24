@@ -11,9 +11,12 @@
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.28",
     "emotion-theming": "^10.0.27",
+    "gray-matter": "^4.0.2",
     "next": "9.3.5",
+    "raw-loader": "^4.0.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1"
   },
   "devDependencies": {
     "next-images": "^1.4.0"

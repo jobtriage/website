@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import Typography from '../../UI/Typography/Typography';
 
 const NavBar = () => {
     const theme = useTheme();
@@ -13,14 +13,22 @@ const NavBar = () => {
             width: '55px',
         },
         a: {
-            color: theme.palette.secondary.main
+            color: theme.palette.secondary.main,
+            marginLeft: '2.5rem'
         }
     });
 
     return (
         <nav css={Root}>
             <img src='/images/Logo.svg' alt='Job Triage' />
-            <a href='https://github.com/jobtriage/jobtriage' target='_blank'>GitHub</a>
+            <div>
+                <a href='https://github.com/jobtriage/jobtriage' target='_blank'>GitHub</a>
+                <Link href='/about'>
+                    <a>
+                        About
+                    </a>
+                </Link>
+            </div>
         </nav>
     )
 };
