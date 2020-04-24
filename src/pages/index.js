@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import NavBar from '../components/NavBar/NavBar';
 import Intro from '../components/Intro/Intro';
 import Features from '../components/Features/Features';
@@ -7,14 +7,14 @@ import Footer from '../components/Footer/Footer';
 
 const Index = () => {
   return (
-    <React.Fragment>
+    <>
       <NavBar />
       <Intro />
       <Features />
       <Contribution />
       <Footer />
-    </React.Fragment>
-  )
+    </>
+  );
 };
 
 export default Index;
