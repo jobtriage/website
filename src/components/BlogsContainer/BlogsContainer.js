@@ -7,6 +7,7 @@ const BlogsContainer = (props) => {
 
 
   const root = css({
+    marginTop: '100px',
     ul: {
       listStyle: 'none',
     },

@@ -9,7 +9,14 @@ const getAllBlogsDetails = async () => {
 
   for (const path of allPaths) {
     const { metaData, content } = await getEachBlogDetails(path.params.slug);
-    allBlogsDetails.push({ metaData, content, slug: path.params.slug });
+    const idx = metaData.blogNumber;
+    if (idx === 1) {
+      allBlogsDetails[0] = { metaData, content, slug: path.params.slug };
+    } else {
+      const total = allPaths.length;
+      const newIdx = total - idx + 1;
+      allBlogsDetails[newIdx] = { metaData, content, slug: path.params.slug };
+    }
   }
 
   return allBlogsDetails;

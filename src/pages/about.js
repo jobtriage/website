@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar/NavBar';
 import getAllBlogDetails from '../utils/getAllBlogsDetails';
 import BlogsContainer from '../components/BlogsContainer/BlogsContainer';
+import Footer from '../components/Footer/Footer';
 
 const About = (props) => {
   const { allBlogsDetails } = props;
@@ -10,6 +11,7 @@ const About = (props) => {
     <>
       <NavBar />
       <BlogsContainer allBlogsDetails={allBlogsDetails} />
+      <Footer />
     </>
   );
 };

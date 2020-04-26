@@ -1,9 +1,10 @@
 ---
 title: "JobTriage: Organize your job search"
-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dignissimos omnis incidunt atque nesciunt, aliquid maxime corporis debitis ex ratione animi optio vitae quis iste facere tenetur inventore cum quidem?"
+description: "JobTriage is the new open-source project for managing your job search. It is indeed an interactive way to manage and track your job applications with a kanban board. In this post, I will discuss the features and some important components of the job search."
 author: "Koushik Mohan"
 url: "https://twitter.com/KoushikKM96"
 date: "April 26, 2020"
+blogNumber: 1
 ---
 
 Searching for jobs is exhausting. We may have to constantly prepare for the interview questions, apply around 20 companies every day, have multiple interviews with different companies, and of course constantly facing rejections. The best way to reduce this pain is by organizing your job search.  Not only it will make job search easy but it will have a soothing effect. 

@@ -7,10 +7,10 @@ const global = css({
     boxSizing: 'border-box',
   },
   html: {
-    width: '100vw',
+    width: '100%',
   },
   body: {
-    width: '75vw',
+    width: '75%',
     margin: '0 auto',
     fontFamily: 'Montserrat sans-serif',
   },

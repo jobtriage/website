@@ -4,6 +4,7 @@ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, di
 author: "Koushik Mohan"
 url: "koushikmohan.com"
 date: "April 4, 2020"
+blogNumber: 2
 ---
 
 ### What is self analysis
