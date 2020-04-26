@@ -8,7 +8,7 @@ const Footer = () => {
   const root = css({
     div: {
       marginTop: '5em',
-      height: '1.5px',
+      height: '2px',
       backgroundColor: '#f3f3f3',
     },
     section: {
@@ -58,9 +58,7 @@ const Footer = () => {
             @Gmail
           </a>
         </span>
-
       </section>
-
     </div>
 
   );

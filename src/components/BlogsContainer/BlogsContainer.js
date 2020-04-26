@@ -25,6 +25,7 @@ const BlogsContainer = (props) => {
               author={blog.metaData.author}
               date={blog.metaData.date}
               slug={blog.slug}
+              url={blog.metaData.url}
             />
           );
         })}

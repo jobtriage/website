@@ -15,9 +15,9 @@ const BlogTemplate = (props) => {
   const root = css({
     color: '#3F3D3D',
     a: {
-      color: theme.palette.primary.main,
+      color: theme.palette.secondary.main,
       ':hover': {
-        color: '#3F3D3D',
+        color: theme.palette.primary.main,
       },
     },
   });
@@ -42,11 +42,15 @@ const BlogTemplate = (props) => {
       margin: '1rem 1.5rem',
     },
   });
+  const titleStyle = css({
+    color: theme.palette.primary.main,
+  });
+
   return (
     <div css={root}>
       <NavBar css={{ color: 'green' }} />
       <div css={container}>
-        <Typography component="h1">{metaData.title}</Typography>
+        <Typography css={titleStyle} component="h1">{metaData.title}</Typography>
         <ReactMarkdown source={content} />
       </div>
       <Footer />
