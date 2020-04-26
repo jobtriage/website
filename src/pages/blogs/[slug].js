@@ -7,6 +7,7 @@ import getEachBlogDetails from '../../utils/getEachBlogDetails';
 import NavBar from '../../components/NavBar/NavBar';
 import Typography from '../../UI/Typography/Typography';
 import Footer from '../../components/Footer/Footer';
+import Author from '../../components/AuthorDetails/AutorDetails';
 
 const BlogTemplate = (props) => {
   const { metaData, content } = props;
@@ -14,15 +15,15 @@ const BlogTemplate = (props) => {
 
   const root = css({
     color: '#3F3D3D',
+  });
+  const container = css({
+    maxWidth: '750px',
     a: {
       color: theme.palette.secondary.main,
       ':hover': {
         color: theme.palette.primary.main,
       },
     },
-  });
-  const container = css({
-    maxWidth: '750px',
     margin: '100px auto',
     h1: {
       margin: '1rem auto 2rem auto',
@@ -34,9 +35,11 @@ const BlogTemplate = (props) => {
     p: {
       margin: '1rem auto 2rem auto',
       lineHeight: '1.8',
+      fontSize: '21px',
     },
     ul: {
       margin: '1rem auto 2rem auto',
+      fontSize: '21px',
     },
     li: {
       margin: '1rem 1.5rem',
@@ -48,8 +51,15 @@ const BlogTemplate = (props) => {
 
   return (
     <div css={root}>
-      <NavBar css={{ color: 'green' }} />
+      <NavBar isOnBlog />
       <div css={container}>
+        <Author
+          twitterUrl={metaData.twitterUrl}
+          githubUrl={metaData.githubUrl}
+          author={metaData.author}
+          date={metaData.date}
+          profileUrl={metaData.profileUrl}
+        />
         <Typography css={titleStyle} component="h1">{metaData.title}</Typography>
         <ReactMarkdown source={content} />
       </div>

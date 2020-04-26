@@ -2,7 +2,9 @@
 title: "JobTriage: Organize your job search"
 description: "JobTriage is the new open-source project for managing your job search. It is indeed an interactive way to manage and track your job applications with a kanban board. In this post, I will discuss the features and some important components of the job search."
 author: "Koushik Mohan"
-url: "https://twitter.com/KoushikKM96"
+twitterUrl: "https://twitter.com/KoushikKM96"
+githubUrl: "https://github.com/koushikmohan1996"
+profileUrl: "https://img.icons8.com/ios-glyphs/100/000000/test-account.png"
 date: "April 26, 2020"
 blogNumber: 1
 ---
