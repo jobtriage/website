@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import PropTypes from 'prop-types';
 
 const Author = (props) => {
   const {
@@ -64,3 +65,11 @@ const Author = (props) => {
 };
 
 export default Author;
+
+Author.propTypes = {
+  twitterUrl: PropTypes.string.isRequired,
+  githubUrl: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  profileUrl: PropTypes.string.isRequired,
+};

@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import Router from 'next/router';
+import PropTypes from 'prop-types';
 import Typography from '../../../UI/Typography/Typography';
 
 const BlogItem = (props) => {
@@ -59,3 +60,11 @@ const BlogItem = (props) => {
 };
 
 export default BlogItem;
+
+BlogItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import PropTypes from 'prop-types';
 
 const Typography = (props) => {
   const {
@@ -61,3 +62,8 @@ const Typography = (props) => {
 };
 
 export default Typography;
+
+Typography.propTypes = {
+  component: PropTypes.node.isRequired,
+  children: PropTypes.any.isRequired,
+};

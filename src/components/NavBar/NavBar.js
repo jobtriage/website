@@ -3,6 +3,7 @@ import React from 'react';
 import { css, ClassNames } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import Router from 'next/router';
+import PropTypes from 'prop-types';
 import ActiveLink from '../ActiveLink/ActiveLink';
 
 const NavBar = ({ isOnBlog }) => {
@@ -76,3 +77,11 @@ const NavBar = ({ isOnBlog }) => {
 };
 
 export default NavBar;
+
+NavBar.defaultProps = {
+  isOnBlog: false,
+};
+
+NavBar.propsTypes = {
+  isOnBlog: PropTypes.bool.isRequired,
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import PropTypes, { oneOfType } from 'prop-types';
 import BlogItem from './BlogItem/BlogItem';
 
 const BlogsContainer = (props) => {
@@ -35,3 +36,10 @@ const BlogsContainer = (props) => {
 };
 
 export default BlogsContainer;
+
+BlogsContainer.propTypes = {
+  allBlogsDetails: PropTypes.arrayOf(PropTypes.shape({
+    metaData: PropTypes.objectOf(oneOfType([PropTypes.string, PropTypes.number])),
+    content: PropTypes.string,
+  })).isRequired,
+};

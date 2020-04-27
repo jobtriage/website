@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NavBar from '../components/NavBar/NavBar';
 import getAllBlogDetails from '../utils/getAllBlogsDetails';
 import BlogsContainer from '../components/BlogsContainer/BlogsContainer';
@@ -16,9 +17,12 @@ const About = (props) => {
   );
 };
 
+
 export default About;
 
-
+About.propTypes = {
+  allBlogsDetails: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export const getStaticProps = async () => {
   const allBlogsDetails = await getAllBlogDetails();
 

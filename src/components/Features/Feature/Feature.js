@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
+import PropTypes from 'prop-types';
 import Typography from '../../../UI/Typography/Typography';
 
 const Feature = (props) => {
@@ -34,3 +35,9 @@ const Feature = (props) => {
 };
 
 export default Feature;
+
+Feature.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};

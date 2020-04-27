@@ -1,11 +1,11 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
+import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const {
     children,
-    type = 'submit',
     ...more
   } = props;
   const theme = useTheme();
@@ -29,8 +29,12 @@ const Button = (props) => {
   });
 
   return (
-    <button css={root} type={type} {...more}>{children}</button>
+    <button css={root} type="submit" {...more}>{children}</button>
   );
 };
 
 export default Button;
+
+Button.propTypes = {
+  children: PropTypes.string.isRequired,
+};

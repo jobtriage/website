@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
+import PropTypes from 'prop-types';
 import getAllBlogPaths from '../../utils/getAllBlogPaths';
 import getEachBlogDetails from '../../utils/getEachBlogDetails';
 import NavBar from '../../components/NavBar/NavBar';
@@ -82,6 +83,12 @@ const BlogTemplate = (props) => {
 };
 
 export default BlogTemplate;
+
+BlogTemplate.propTypes = {
+  metaData: PropTypes.objectOf(PropTypes
+    .oneOfType([PropTypes.string, PropTypes.number])).isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export const getStaticProps = async (context) => {
   const { slug } = context.params;
