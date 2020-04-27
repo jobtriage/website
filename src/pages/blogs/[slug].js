@@ -18,19 +18,27 @@ const BlogTemplate = (props) => {
   });
   const container = css({
     maxWidth: '750px',
+    margin: '100px auto',
+  });
+
+  const titleStyle = css({
+    color: theme.palette.primary.main,
+  });
+
+  const article = css({
     a: {
       color: theme.palette.secondary.main,
       ':hover': {
         color: theme.palette.primary.main,
       },
     },
-    margin: '100px auto',
     h1: {
       margin: '1rem auto 2rem auto',
       lineHeight: '1.4',
     },
     h3: {
       margin: '1rem auto 2rem auto',
+      lineHeight: '1.4',
     },
     p: {
       margin: '1rem auto 2rem auto',
@@ -44,11 +52,12 @@ const BlogTemplate = (props) => {
     li: {
       margin: '1rem 1.5rem',
     },
+    img: {
+      width: '100%',
+      margin: '1rem auto 2rem auto',
+      boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+    },
   });
-  const titleStyle = css({
-    color: theme.palette.primary.main,
-  });
-
   return (
     <div css={root}>
       <NavBar isOnBlog />
@@ -61,7 +70,9 @@ const BlogTemplate = (props) => {
           profileUrl={metaData.profileUrl}
         />
         <Typography css={titleStyle} component="h1">{metaData.title}</Typography>
-        <ReactMarkdown source={content} />
+        <article css={article}>
+          <ReactMarkdown source={content} />
+        </article>
       </div>
       <Footer />
     </div>

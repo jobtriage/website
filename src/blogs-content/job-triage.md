@@ -25,6 +25,8 @@ Triage is the process of determining the priority of patient's treatments based 
 
 JobTriage lets you add job applications along with priority(high, medium, low). You can add notes, time log for each application, and prepare your interviews according to its priority.
 
+![Dashboard](https://dev-to-uploads.s3.amazonaws.com/i/dqgkp3jkh5s30ja4mdk8.png)
+
 ## Self-analysis
 
  Self-analysis is very important and simple yet we fail to give importance. It should be given the same weightage to that of technical interviews. I will discuss some basic components of self-analysis.
