@@ -1,30 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Introduction
+
+### This website is for our core open source project [Job Triage](https://github.com/jobtriage/jobtriage).
+### You can checkout our core product  [Job Triage App](https://app.jobtriage.org/). It is an interactive way to manage your job applications.
+
+## Motivation
+
+The purpose of this website is to provide information and guidance to our users about our core product. We want to keep it separate from our web app to have more flexibility and to keep our web app more focused.
+
+## Tech Stack
+
+- [NextJS](https://nextjs.org/) 
+- [ReactJS](https://reactjs.org/)
+- [Emotion](https://emotion.sh/docs/@emotion/core) 
 
 ## Getting Started
 
 First, run the development server:
-
 ```bash
 npm run dev
+
 # or
+
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can start editing the pages. The page auto-updates as you edit the file.
