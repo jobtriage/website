@@ -23,6 +23,7 @@ const BlogTemplate = (props) => {
 
   const titleStyle = css({
     color: theme.palette.primary.main,
+    textDecoration: 'underline',
   });
 
   const article = css({
@@ -58,6 +59,7 @@ const BlogTemplate = (props) => {
       boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
     },
   });
+
   return (
     <div css={root}>
       <NavBar isOnBlog />

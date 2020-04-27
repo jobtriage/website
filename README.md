@@ -5,7 +5,7 @@
 
 ## Motivation
 
-The purpose of this website is to provide information and guidance to our users about our core product. We want to keep it separate from our web app to have more flexibility and to keep our web app more focused.
+The purpose of this website is to provide information and guidance to the users about the core product. We want to keep it separate from the web app to have more flexibility and to keep our web app more focused.
 
 ## Tech Stack
 

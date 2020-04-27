@@ -18,41 +18,43 @@ const BlogItem = (props) => {
     marginTop: '3rem',
     cursor: 'pointer',
     ':hover': {
-      boxShadow: '1px 1px 2px 1px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.1)',
     },
   };
+
   const titleStyle = css({
     color: theme.palette.primary.main,
+    textDecoration: 'underline',
   });
+
   const descriptionStyle = css({
     marginTop: '0.8rem',
+    lineHeight: '1.6',
   });
+
   const dateStyle = css({
     fontSize: '13px',
     fontWeight: '100',
     fontStyle: 'italic',
   });
+
   const authorStyle = css({
     marginTop: '1.8rem',
     color: theme.palette.secondary.main,
   });
 
-  const routeChageHandler = () => {
-    Router.push(`/blogs/${slug}`);
-  };
+
   return (
-    <li css={root} onClick={() => routeChageHandler()}>
-      <div>
-        <Typography css={titleStyle} component="h3">{title}</Typography>
-        <Typography css={descriptionStyle} component="p">{description}</Typography>
-        <Typography css={authorStyle} component="p">
-          By
-          {' '}
-          {author}
-        </Typography>
-        <Typography css={dateStyle} component="p">{date}</Typography>
-      </div>
-    </li>
+    <div css={root} onClick={() => Router.push(`/blogs/${slug}`)}>
+      <Typography css={titleStyle} component="h3">{title}</Typography>
+      <Typography css={descriptionStyle} component="p">{description}</Typography>
+      <Typography css={authorStyle} component="p">
+        By
+        {' '}
+        {author}
+      </Typography>
+      <Typography css={dateStyle} component="p">{date}</Typography>
+    </div>
   );
 };
 

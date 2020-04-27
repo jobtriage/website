@@ -8,28 +8,28 @@ const BlogsContainer = (props) => {
 
   const root = css({
     marginTop: '100px',
-    ul: {
-      listStyle: 'none',
+    '@media (min-width: 800px)': {
+      display: 'grid',
+      gridGap: '30px',
+      gridTemplateColumns: '1fr 1fr',
     },
   });
 
   return (
     <section css={root}>
-      <ul>
-        {allBlogsDetails.map((blog) => {
-          return (
-            <BlogItem
-              key={blog.metaData.title}
-              title={blog.metaData.title}
-              description={blog.metaData.description}
-              author={blog.metaData.author}
-              date={blog.metaData.date}
-              slug={blog.slug}
-              url={blog.metaData.url}
-            />
-          );
-        })}
-      </ul>
+      {allBlogsDetails.map((blog) => {
+        return (
+          <BlogItem
+            key={blog.metaData.title}
+            title={blog.metaData.title}
+            description={blog.metaData.description}
+            author={blog.metaData.author}
+            date={blog.metaData.date}
+            slug={blog.slug}
+            url={blog.metaData.url}
+          />
+        );
+      })}
     </section>
   );
 };
