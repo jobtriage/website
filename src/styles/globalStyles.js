@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 
-const global = css({
+const globalStyles = css({
   '*': {
     padding: 0,
     margin: 0,
@@ -19,4 +19,4 @@ const global = css({
   },
 });
 
-export default global;
+export default globalStyles;

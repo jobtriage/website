@@ -4,7 +4,7 @@ module.exports = {
         es6: true,
     },
     extends: [
-        'airbnb',
+        'airbnb', "plugin:jest/recommended", "plugin:jest/style"
     ],
     globals: {
         Atomics: 'readonly',
@@ -15,7 +15,7 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: [
-        'react',
+        'react', "jest"
     ],
     rules: {
         'react/jsx-filename-extension': 0,

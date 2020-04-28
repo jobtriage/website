@@ -1,16 +1,16 @@
 // App is the entry component for the project. Component prop is the
 // page which will render through this App component.
-import '../styles/global.css';
+import '../styles/globalStyles.css';
 import { ThemeProvider } from 'emotion-theming';
 import { Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import theme from '../styles/theme';
-import gloabl from '../styles/global';
+import gloablStyles from '../styles/globalStyles';
 
 const WithTheme = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Global styles={gloabl} />
+      <Global styles={gloablStyles} />
       {children}
     </ThemeProvider>
   );
