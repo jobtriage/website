@@ -88,5 +88,5 @@ NavBar.defaultProps = {
 };
 
 NavBar.propsTypes = {
-  isOnBlog: PropTypes.bool.isRequired,
+  isOnBlog: PropTypes.bool,
 };
