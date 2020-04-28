@@ -34,9 +34,9 @@ const Typography = (props) => {
 
       case 'p':
         return {
-          fontSize: '16px',
-          lineHeight: '24px',
           fontWeight: '400',
+          lineHeight: '1.4',
+          fontSize: '21px',
         };
 
       default:

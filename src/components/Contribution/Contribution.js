@@ -34,8 +34,8 @@ const Contribution = () => {
         <div css={divider} />
       </Typography>
       <Typography css={types} component="p">
-        Job Triage is completely open source, free and it always will be.
-        Contribute to Job Triage by creating
+        Job Triage is completely open sourced and free.
+        Contribute to Job Triage by creating{' '}
         <a
           href="https://github.com/jobtriage/jobtriage/issues"
           target="_blank"
@@ -45,12 +45,13 @@ const Contribution = () => {
         </a>
         {' '}
         and
+        {' '}
         <a
           href="https://github.com/jobtriage/jobtriage/pulls"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Pull requests
+          pull requests
         </a>
         .
       </Typography>

@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
 import React from 'react';
+import Head from 'next/head'
 import { css, ClassNames } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import Router from 'next/router';
@@ -44,6 +45,10 @@ const NavBar = ({ isOnBlog }) => {
 
   return (
     <>
+      <Head>
+        <title>Job Triage</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <nav css={Root}>
         <img src="/images/Logo.svg" alt="Job Triage" onClick={() => Router.push('/')} />
         <div>

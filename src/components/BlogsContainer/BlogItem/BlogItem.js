@@ -25,7 +25,6 @@ const BlogItem = (props) => {
 
   const titleStyle = css({
     color: theme.palette.primary.main,
-    textDecoration: 'underline',
   });
 
   const descriptionStyle = css({

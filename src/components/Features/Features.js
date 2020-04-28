@@ -61,7 +61,7 @@ const Features = () => {
           <Feature
             url="/images/Priority.svg"
             title="Priority Basesd"
-            description="Manage your application with Kanban based system."
+            description="Manage job applications with Kanban board based system."
           />
         </div>
         <div css={child2}>
@@ -69,21 +69,21 @@ const Features = () => {
 
             url="/images/Logs.svg"
             title="Time Logs"
-            description="Manage your application with Kanban based system."
+            description="Add interview schedules with notes for quick reference."
           />
         </div>
         <div css={child3}>
           <Feature
             url="/images/Self.svg"
             title="Self Analysis"
-            description="Manage your application with Kanban based system."
+            description="Prepare your personal pitch and S.T.A.R stories."
           />
         </div>
         <div css={child4}>
           <Feature
             url="/images/Free.svg"
-            title="Completly Free"
-            description="Manage your application with Kanban based system."
+            title="Completely Free"
+            description="It always will be. No restrictions."
           />
         </div>
       </div>

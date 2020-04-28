@@ -44,10 +44,10 @@ const Intro = () => {
         <Typography css={typographyMargin} component="h3">Job Triage provides an interactive way to manage your job applications.</Typography>
         <Typography component="p">
           Job searching is a very exhaustive process. Managing application is very critical in this.
-          Our app can help you in many ways with your application and make precess less painful.
+          Our app can help you in many ways with your application and make the process less painful.
         </Typography>
-        <Button css={button} type="submit">
-          Go To The App
+        <Button css={button} type="submit" onClick={() => window.open("https://app.jobtriage.org/", '_blank')}>
+            Go to app 
         </Button>
       </section>
       <section>
