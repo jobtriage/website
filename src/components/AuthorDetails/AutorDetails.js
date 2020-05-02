@@ -50,7 +50,6 @@ const Author = (props) => {
 
   return (
     <div css={root}>
-      {/* <div css={[profile, child1]} /> */}
       <img css={[profile, child1]} src={profileUrl} alt="profile" />
       <h4 css={child2} style={{ margin: 0, fontSize: '16px' }}>{author}</h4>
       <h3 css={child3} style={{ margin: 0, fontSize: '16px', fontWeight: '500' }}>{date}</h3>
@@ -64,8 +63,6 @@ const Author = (props) => {
   );
 };
 
-export default Author;
-
 Author.propTypes = {
   twitterUrl: PropTypes.string.isRequired,
   githubUrl: PropTypes.string.isRequired,
@@ -73,3 +70,5 @@ Author.propTypes = {
   author: PropTypes.string.isRequired,
   profileUrl: PropTypes.string.isRequired,
 };
+
+export default Author;

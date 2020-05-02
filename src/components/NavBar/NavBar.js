@@ -1,6 +1,6 @@
 /* eslint-disable no-shadow */
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import { css, ClassNames } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import Router from 'next/router';
@@ -81,7 +81,6 @@ const NavBar = ({ isOnBlog }) => {
   );
 };
 
-export default NavBar;
 
 NavBar.defaultProps = {
   isOnBlog: false,
@@ -90,3 +89,5 @@ NavBar.defaultProps = {
 NavBar.propsTypes = {
   isOnBlog: PropTypes.bool,
 };
+
+export default NavBar;

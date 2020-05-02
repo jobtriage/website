@@ -17,12 +17,13 @@ const About = (props) => {
   );
 };
 
-
-export default About;
-
 About.propTypes = {
   allBlogsDetails: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+
+export default About;
+
+
 export const getStaticProps = async () => {
   const allBlogsDetails = await getAllBlogDetails();
 

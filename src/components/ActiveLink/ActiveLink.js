@@ -18,10 +18,10 @@ const ActiveLink = ({
   return <Link {...props} href={href}>{React.cloneElement(child, { className })}</Link>;
 };
 
-export default ActiveLink;
-
 ActiveLink.propTypes = {
   children: PropTypes.any.isRequired,
   activeClassName: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
 };
+
+export default ActiveLink;

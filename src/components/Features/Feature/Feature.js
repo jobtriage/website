@@ -34,10 +34,10 @@ const Feature = (props) => {
   );
 };
 
-export default Feature;
-
 Feature.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };
+
+export default Feature;

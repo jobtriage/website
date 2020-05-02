@@ -35,11 +35,11 @@ const BlogsContainer = (props) => {
   );
 };
 
-export default BlogsContainer;
-
 BlogsContainer.propTypes = {
   allBlogsDetails: PropTypes.arrayOf(PropTypes.shape({
     metaData: PropTypes.objectOf(oneOfType([PropTypes.string, PropTypes.number])),
     content: PropTypes.string,
   })).isRequired,
 };
+
+export default BlogsContainer;

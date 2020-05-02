@@ -61,9 +61,9 @@ const Typography = (props) => {
   );
 };
 
-export default Typography;
-
 Typography.propTypes = {
   component: PropTypes.node.isRequired,
   children: PropTypes.any.isRequired,
 };
+
+export default Typography;

@@ -81,13 +81,13 @@ const BlogTemplate = (props) => {
   );
 };
 
-export default BlogTemplate;
-
 BlogTemplate.propTypes = {
   metaData: PropTypes.objectOf(PropTypes
     .oneOfType([PropTypes.string, PropTypes.number])).isRequired,
   content: PropTypes.string.isRequired,
 };
+
+export default BlogTemplate;
 
 export const getStaticProps = async (context) => {
   const { slug } = context.params;

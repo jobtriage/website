@@ -34,8 +34,8 @@ const Button = (props) => {
   );
 };
 
-export default Button;
-
 Button.propTypes = {
   children: PropTypes.string.isRequired,
 };
+
+export default Button;

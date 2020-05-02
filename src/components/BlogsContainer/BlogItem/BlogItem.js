@@ -58,8 +58,6 @@ const BlogItem = (props) => {
   );
 };
 
-export default BlogItem;
-
 BlogItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -67,3 +65,5 @@ BlogItem.propTypes = {
   date: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 };
+
+export default BlogItem;
