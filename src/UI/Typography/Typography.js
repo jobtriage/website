@@ -36,7 +36,7 @@ const Typography = (props) => {
         return {
           fontWeight: '400',
           lineHeight: '1.4',
-          fontSize: '21px',
+          fontSize: '18px',
         };
 
       default:

@@ -33,9 +33,9 @@ const Footer = () => {
     <div css={root}>
       <div />
       <section>
-        <Typography component="p">
+        <span>
           Released v0.1.0 under MIT License. Copyright &copy; 2020 Job Triage.
-        </Typography>
+        </span>
         <span>
           Follow
           <a
