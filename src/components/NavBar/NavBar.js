@@ -50,12 +50,12 @@ const NavBar = ({ isOnBlog }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <nav css={Root}>
-        <img src="/images/Logo.svg" alt="Job Triage" onClick={() => Router.push('/')} />
+        <img src="/images/Logo.svg" alt="Job Triage Logo" onClick={() => Router.push('/')} />
         <div>
           <ClassNames>
             {({ css }) => (
               <ActiveLink href="/" activeClassName={css(activeStyle)}>
-                <a css={anchor}>Home</a>
+                <a css={anchor} data-testid="home">Home</a>
               </ActiveLink>
             )}
           </ClassNames>
@@ -86,7 +86,7 @@ NavBar.defaultProps = {
   isOnBlog: false,
 };
 
-NavBar.propsTypes = {
+NavBar.propTypes = {
   isOnBlog: PropTypes.bool,
 };
 
