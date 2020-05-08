@@ -4,7 +4,10 @@ module.exports = {
         es6: true,
     },
     extends: [
-        'airbnb', "plugin:jest/recommended", "plugin:jest/style"
+        'airbnb',
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:cypress/recommended"
     ],
     globals: {
         Atomics: 'readonly',
@@ -28,6 +31,7 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': 0,
         'react/react-in-jsx-scope': 0,
         "jsx-a11y/no-noninteractive-element-interactions": 0,
-        "react/forbid-prop-types": 0
+        "react/forbid-prop-types": 0,
+        "jest/expect-expect": 0
     },
 };
