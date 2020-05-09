@@ -50,7 +50,11 @@ const NavBar = ({ isOnBlog }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <nav css={Root}>
-        <img src="/images/Logo.svg" alt="Job Triage Logo" onClick={() => Router.push('/')} />
+        <img
+          src="/images/Logo.svg"
+          alt="Job Triage Logo"
+          onClick={() => Router.push('/')}
+        />
         <div>
           <ClassNames>
             {({ css }) => (
@@ -62,11 +66,12 @@ const NavBar = ({ isOnBlog }) => {
           <ClassNames>
             {({ css }) => (
               <ActiveLink href="/blogs" activeClassName={css(activeStyle)}>
-                <a css={isOnBlog ? [anchor, onBlog] : anchor}>Blogs</a>
+                <a css={isOnBlog ? [anchor, onBlog] : anchor} data-testid="blogs">Blogs</a>
               </ActiveLink>
             )}
           </ClassNames>
           <a
+            data-testid="github"
             css={anchor}
             href="https://github.com/jobtriage/jobtriage"
             target="_blank"
