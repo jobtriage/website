@@ -6,6 +6,7 @@ import { Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import theme from '../styles/theme';
 import gloablStyles from '../styles/globalStyles';
+import Head from 'next/head';
 
 const WithTheme = ({ children }) => {
   return (
@@ -18,9 +19,25 @@ const WithTheme = ({ children }) => {
 
 const App = ({ Component, pageProps }) => {
   return (
-    <WithTheme>
-      <Component {...pageProps} />
-    </WithTheme>
+    <>
+      <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157125298-2"></script>
+      <script dangerouslySetInnerHTML={
+          {
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments)}
+        gtag("js", new Date());
+        gtag("config", "UA-157125298-2");
+        `}
+        }
+      >
+      </script>
+      </Head>
+      <WithTheme>
+        <Component {...pageProps} />
+      </WithTheme>
+    </>
   );
 };
 
