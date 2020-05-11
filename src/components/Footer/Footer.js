@@ -1,7 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import Typography from '../../UI/Typography/Typography';
 
 const Footer = () => {
   const theme = useTheme();
@@ -42,6 +41,7 @@ const Footer = () => {
             href="https://twitter.com/KoushikKM96"
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="twitter"
           >
             @Twitter
           </a>
@@ -54,6 +54,7 @@ const Footer = () => {
             href="mailto:jobtriage@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="gmail"
           >
             @Gmail
           </a>

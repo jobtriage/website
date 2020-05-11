@@ -37,6 +37,10 @@ const Intro = () => {
     margin: '50px 0px',
   });
 
+  const appButtonHandle = () => {
+    window.open('https://app.jobtriage.org/', '_blank');
+  };
+
 
   return (
     <div css={root}>
@@ -46,7 +50,7 @@ const Intro = () => {
           Job searching is a very exhaustive process. Managing application is very critical in this.
           Our app can help you in many ways with your application and make the process less painful.
         </Typography>
-        <Button css={button} type="submit" onClick={() => window.open('https://app.jobtriage.org/', '_blank')}>
+        <Button css={button} type="submit" onClick={appButtonHandle} data-testid="app-button">
           Go to app
         </Button>
       </section>

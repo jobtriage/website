@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "eslint --ext .jsx,.js src/",
-    "test": "jest --watch",
+    "test": "jest",
     "cypress": "cypress open"
   },
   "dependencies": {
@@ -29,9 +29,12 @@
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "@testing-library/user-event": "^10.1.0",
+    "babel-eslint": "8",
     "babel-jest": "^25.4.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-transform-dynamic-import": "^2.1.0",
     "cypress": "^4.5.0",
-    "eslint": "^6.8.0",
+    "eslint": "4.x",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jest": "^23.8.2",

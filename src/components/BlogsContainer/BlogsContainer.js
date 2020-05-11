@@ -17,7 +17,7 @@ const BlogsContainer = (props) => {
   });
 
   return (
-    <section css={root}>
+    <section data={allBlogsDetails.length} css={root} data-testid="preview-list">
       {allBlogsDetails.map((blog) => {
         return (
           <BlogItem

@@ -1,14 +1,16 @@
-import matter from 'gray-matter';;
+import matter from 'gray-matter';
+import path from 'path';
+import fs from 'fs';
 
-const getEachBlogDetails = async(slug) => {
+const getEachBlogDetails = async (slug) => {
+  const filePath = path.join(process.cwd(), `src/blogs-content/${slug}.md`);
+  const file = fs.readFileSync(filePath, { encoding: 'utf-8' });
+  const { data, content } = matter(file);
 
-    const file = await import(`../blogs-content/${slug}.md`);
-    const { data, content } = matter(file.default);
-
-    return {
-        metaData: data,
-        content
-    }
+  return {
+    metaData: data,
+    content,
+  };
 };
 
 export default getEachBlogDetails;

@@ -45,7 +45,7 @@ const BlogItem = (props) => {
 
 
   return (
-    <div css={root} onClick={() => Router.push(`/blogs/${slug}`)}>
+    <div css={root} test-data={slug} onClick={() => Router.push(`/blogs/${slug}`)} data-testid="blog-preview">
       <Typography css={titleStyle} component="h3">{title}</Typography>
       <Typography css={descriptionStyle} component="p">{description}</Typography>
       <Typography css={authorStyle} component="p">
