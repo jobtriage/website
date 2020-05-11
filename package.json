@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint --ext .jsx,.js src/",
     "test": "jest",
-    "cypress": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",
