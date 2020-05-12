@@ -34,5 +34,5 @@ You can start editing the pages. The page auto-updates as you edit the file.
 yarn test:unit
 ```
 ### 2. To run integration and e2e tests with cypress
- `cy:open`     This command will open the cypress and run the tests visually.
- `test:e2e`  This command will run tests headless from terminal.
+- Run `cy:open` to run tests visually in the the browser.
+- Run `test:e2e` to run tests headlessly in the terminal.
