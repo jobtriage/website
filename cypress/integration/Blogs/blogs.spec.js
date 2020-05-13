@@ -3,7 +3,7 @@ describe('Blogs Page', () => {
     cy.visit('/blogs');
   });
 
-  it.only('Should able to visit correct page', () => {
+  it('Should able to visit correct page', () => {
     cy.get('[data-testid=preview-list]')
       .as('list')
       .invoke('attr', 'data')
