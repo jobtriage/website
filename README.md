@@ -16,23 +16,46 @@ The purpose of this website is to provide information and guidance to the users 
 ## Getting Started
 
 First, run the development server:
-```bash
-npm run dev
-
-# or
-
+```
 yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the pages. The page auto-updates as you edit the file.
 
-## How to run tests
 
-### 1. To run unit tests
+## Testing
+
+### Writing tests
+We are using the following tools to write tests for the app.
+
+- [Jest](https://jestjs.io/docs/en/getting-started) and [React-testing-library](https://testing-library.com/docs/react-testing-library/intro) for the unit and integration tests
+- [Cypress.io](https://www.cypress.io/) for the integration and end to end tests
+
+### How to run tests
+
+- To run all the tests (jest + cypress),
 ```
-yarn test:unit
+yarn test
 ```
-### 2. To run integration and e2e tests with cypress
-- Run `cy:open` to run tests visually in the the browser.
-- Run `test:e2e` to run tests headlessly in the terminal.
+- To run only jest tests
+```
+yarn test:jest
+```
+- To run cypress tests with GUI
+```
+yarn dev:coverage
+
+&&
+
+yarn cy:open
+```
+- To run cypress tests in the terminal
+```
+yarn test:cy
+```
+
+### Test coverage
+Once, you run the command `yarn test`, it will run all the tests and generate a combined test coverage report.
+
+You can run `yarn open:coverage`  to open an html page with detailed coverage reports.
