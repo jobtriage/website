@@ -9,7 +9,7 @@ const BlogItem = (props) => {
   const theme = useTheme();
 
   const {
-    title, description, author, date, slug,
+    title, description, author, date, slug, blogNumber
   } = props;
 
   const root = {
@@ -45,7 +45,9 @@ const BlogItem = (props) => {
 
 
   return (
-    <div css={root} test-data={slug} onClick={() => Router.push(`/blogs/${slug}`)} data-testid="blog-preview">
+    <div css={root} test-data={slug} 
+      onClick={() => Router.push(`/blogs/${slug}`)} 
+      data-testid={blogNumber === 1? "blog-preview" : null}>
       <Typography css={titleStyle} component="h3">{title}</Typography>
       <Typography css={descriptionStyle} component="p">{description}</Typography>
       <Typography css={authorStyle} component="p">
@@ -64,6 +66,7 @@ BlogItem.propTypes = {
   author: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
+  blogNumber:PropTypes.number.isRequired
 };
 
 export default BlogItem;

@@ -62,7 +62,6 @@ const Typography = (props) => {
 };
 
 Typography.propTypes = {
-  component: PropTypes.node.isRequired,
   children: PropTypes.any.isRequired,
 };
 
