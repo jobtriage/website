@@ -69,6 +69,9 @@
     "wait-on": "^5.0.0"
   },
   "nyc": {
-    "report-dir": "cypress-coverage"
+    "report-dir": "cypress-coverage",
+    "include": [
+      "src/**/*.js"
+    ]
   }
 }
