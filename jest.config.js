@@ -1,12 +1,15 @@
 module.exports = {
+  collectCoverage: true,
+  coverageDirectory: 'jest-coverage',
+  testEnvironment: 'node',
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    'src/**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
   setupFiles: ['jest-prop-type-error'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/cypress/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/cypress'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
     '^.+\\.css$': '<rootDir>/cssTransform.js',

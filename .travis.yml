@@ -17,6 +17,6 @@ install:
     - yarn install
     - npx cypress install
 script:
-    - yarn test:unit
+    - yarn test:jest
     - yarn ci:start &
     - yarn cy:run 
