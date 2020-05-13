@@ -17,7 +17,7 @@ const Author = (props) => {
     gridTemplateRows: '24px 24px',
     '@media (max-width: 500px)': {
       gridTemplateColumns: '48px 3fr 1fr',
-    },
+    }
   });
   const child1 = css({
     gridRow: '1/-1',
@@ -55,9 +55,9 @@ const Author = (props) => {
       <h3 css={child3} style={{ margin: 0, fontSize: '16px', fontWeight: '500' }}>{date}</h3>
       <div css={child4}>
         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <img src="/images/github.svg" alt="github" />
+          <img src="/images/github.svg" alt="github"/>
         </a>
-        <a href={twitterUrl} target="_blank" rel="noopener noreferrer"><img src="/images/twitter.png" alt="twitter" /></a>
+        <a href={twitterUrl} target="_blank" rel="noopener noreferrer" ><img src="/images/twitter.png" alt="twitter" /></a>
       </div>
     </div>
   );

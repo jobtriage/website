@@ -62,6 +62,8 @@
     "http-server": "^0.12.3",
     "jest": "^25.4.0",
     "jest-emotion": "^10.0.32",
+    "jest-environment-jsdom": "^26.0.1",
+    "jest-environment-jsdom-global": "^2.0.2",
     "jest-prop-type-error": "^1.1.0",
     "next-images": "^1.4.0",
     "react-test-renderer": "^16.13.1",

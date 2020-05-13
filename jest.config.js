@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverage: true,
   coverageDirectory: 'jest-coverage',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
